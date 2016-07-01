@@ -1,0 +1,19 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<link href="../css/style_main.css" rel="stylesheet" type="text/css">
+
+<div class="header">
+    <button class="show_siddebar" >
+        <img class="img_header" src="../img/ic_menu_48px-128.png">
+
+    </button>
+
+    <form>
+        <select class="search_by">
+            <option>Автор</option>
+            <option>Жанр</option>
+        </select>
+        <input class="search" type="text" placeholder="Search..." required>
+        <input class="button" type="button" value="Search">
+
+    </form>
+</div>

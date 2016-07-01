@@ -1,0 +1,46 @@
+<%@ page import="com.melkov.beans.Genre" %>
+<%@ page import="com.melkov.beans.GenreList" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<link href="../css/style_main.css" rel="stylesheet" type="text/css">
+
+<div class="left_sideabar">
+
+    <%--<div class="container">--%>
+    <%--<div class="row pad-btm-40">--%>
+    <%--<!-- START tabs -->--%>
+    <%--<div class="span16">--%>
+    <%--<div class="spaceEmOut">--%>
+    <%--<fieldset class="switch switch-two">--%>
+    <%--<input id="author" name="view" type="radio" />--%>
+    <%--<label for="author">Автор</label>--%>
+    <%--<input id="genre" name="view" type="radio" checked />--%>
+    <%--<label for="genre">Жанр</label>--%>
+    <%--<span class="switch-button"></span>--%>
+    <%--</fieldset>--%>
+    <%--</div>--%>
+    <%--</div>--%>
+    <%--</div>--%>
+    <%--</div>--%>
+    <%--<h3>Список Авторов</h3>--%>
+    <%--<div class="nav">--%>
+    <%--<% AuthorList authorList = new AuthorList();--%>
+    <%--for (Author author : authorList.getAuthorList()) {--%>
+    <%--%>--%>
+    <%--<div id="list"><a href="#"><%=author.getName()%></a></div>--%>
+
+    <%--<%}%>--%>
+    <%--</div>--%>
+    <h3>Список Жанров</h3>
+    <div class="nav">
+
+        <jsp:useBean id="genreList" class="com.melkov.beans.GenreList" scope="application"/>
+        <%
+            for (Genre genre : genreList.getGenreList()) {
+        %>
+        <div id="list"><a href="../pages/books.jsp?genre_id=<%=genre.getId()%>&name=<%=genre.getName()%>"><%=genre.getName()%></a></div>
+
+        <%}%>
+    </div>
+
+    <p>&nbsp;</p>
+</div>
