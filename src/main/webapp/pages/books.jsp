@@ -54,7 +54,7 @@
                 <p style="margin:10px;"> <a href="#">Читать</a></p>
             </td>
             <td> style="width:150px;height: 100px;">
-                <img src="<%=book.getImage()%>"></img>
+                <img>
             </td>
         </tr>
         <%}%>
