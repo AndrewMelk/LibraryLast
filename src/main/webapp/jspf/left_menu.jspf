@@ -1,6 +1,6 @@
 <%@ page import="com.melkov.beans.Genre" %>
 <%@ page import="com.melkov.beans.GenreList" %>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <link href="../css/style_main.css" rel="stylesheet" type="text/css">
 
 <div class="left_sideabar">
@@ -33,6 +33,7 @@
     <h3>Список Жанров</h3>
     <div class="nav">
 
+        <div id="list"><a href="books.jsp?genre_id=0">Все книги</a></div>
         <jsp:useBean id="genreList" class="com.melkov.beans.GenreList" scope="application"/>
         <%
             for (Genre genre : genreList.getGenreList()) {

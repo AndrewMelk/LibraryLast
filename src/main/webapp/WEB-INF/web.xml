@@ -7,6 +7,15 @@
         id="WebApp_ID" version="2.5">
 
   <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+    <servlet-name>ShowImage</servlet-name>
+    <servlet-class>com.melkov.servlets.ShowImage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowImage</servlet-name>
+    <url-pattern>/ShowImage</url-pattern>
+  </servlet-mapping>
   <session-config>
     <session-timeout>30</session-timeout>
   </session-config>

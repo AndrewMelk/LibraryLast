@@ -1,5 +1,6 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" session="true" %>
 
 <!DOCTYPE html>
 <html>
@@ -11,10 +12,14 @@
    
 </head>
 <body>
+<%
+    String name = request.getParameter( "username" );
+    request.getSession().setAttribute("username", name);
 
+%>
 <%@ include file="../jspf/header.jspf"%>
 <%@ include file="../jspf/left_menu.jspf"%>
-
+<%@ include file="../jspf/letters.jspf"%>
 
 
 

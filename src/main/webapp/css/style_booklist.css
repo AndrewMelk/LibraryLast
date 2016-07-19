@@ -1,0 +1,35 @@
+div{
+    display: block;
+}
+
+.book_info{
+    width: 210px;
+    height: 450px;
+    font-size: 12px;
+    float: left;
+    margin: 15px;
+}
+.book_title{
+    height: 65px;
+    float: left;
+}
+.book_image{
+    height: 250px;
+    float: left;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -webkit-transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+.book_details{
+    float: left;
+    margin-top: 10px;
+}
+
+.book_image:hover{
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 4px 4px 0 darkgray;
+}
+.book_image:hover::after {
+    opacity: 1;
+}
